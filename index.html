@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>QR code reader for Gaia</title>
+
+  <!-- Building blocks -->
+  <link rel="stylesheet" href="gaia/shared/style/headers.css">
+  <link rel="stylesheet" href="gaia/shared/style/buttons.css">
+  <link rel="stylesheet" href="gaia/shared/style/confirm.css">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="style/ui.css">
+
+  <!-- QR Code Reader JS Library -->
+  <script src="jsqrcode/src/grid.js"></script>
+  <script src="jsqrcode/src/version.js"></script>
+  <script src="jsqrcode/src/detector.js"></script>
+  <script src="jsqrcode/src/formatinf.js"></script>
+  <script src="jsqrcode/src/errorlevel.js"></script>
+  <script src="jsqrcode/src/bitmat.js"></script>
+  <script src="jsqrcode/src/datablock.js"></script>
+  <script src="jsqrcode/src/bmparser.js"></script>
+  <script src="jsqrcode/src/datamask.js"></script>
+  <script src="jsqrcode/src/rsdecoder.js"></script>
+  <script src="jsqrcode/src/gf256poly.js"></script>
+  <script src="jsqrcode/src/gf256.js"></script>
+  <script src="jsqrcode/src/decoder.js"></script>
+  <script src="jsqrcode/src/qrcode.js"></script>
+  <script src="jsqrcode/src/findpat.js"></script>
+  <script src="jsqrcode/src/alignpat.js"></script>
+  <script src="jsqrcode/src/databr.js"></script>
+
+  <!-- Application JS -->
+  <script src="js/install.js"></script>
+  <script src="js/log.js"></script>
+  <script src="js/qrapp.js"></script>
+</head>
+<body>
+<section role="region">
+  <header><h1>QR Code reader</h1></header>
+  <button id="picker">Choose image</button>
+
+  <form id="confirm-url" role="dialog" hidden>
+    <section>
+      <h1>Confirm</h1>
+      <p id="dialog-url">Do you want to visit
+        <span id="url-placeholder"></span> ?
+      </p>
+    </section>
+    <menu>
+      <button type="reset">Cancel</button>
+      <button>Go!</button>
+    </menu>
+  </form>
+  
+  <form id="unknown-data" role="dialog" hidden>
+    <section>
+      <h1>Unknown data</h1>
+      <p id="data-placeholder"></p>
+    </section>
+    <menu>
+      <button class="full" type="submit">Done</button>
+    </menu>
+  </form>
+
+
+</section>
+
+<section id="log" hidden></section>
+</body>

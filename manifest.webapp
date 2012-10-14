@@ -1,0 +1,18 @@
+{
+  "name": "QR code",
+  "description": "QR code",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Anthony"
+  },
+  "locales": {
+    "en-US": {
+      "name": "QR Code",
+      "description": "A QR Code reader"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "120": "/tests/email.jpg"
+  }
+}

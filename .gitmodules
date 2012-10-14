@@ -1,0 +1,6 @@
+[submodule "jsqrcode"]
+	path = jsqrcode
+	url = git://github.com/LazarSoft/jsqrcode.git
+[submodule "gaia"]
+	path = gaia
+	url = git://github.com/mozilla-b2g/gaia.git
