@@ -1,7 +1,7 @@
 {
   "name": "QR code",
   "description": "QR code",
-  "launch_path": "/index.html",
+  "launch_path": "/qr-gaia/index.html",
   "developer": {
     "name": "Anthony"
   },
@@ -13,6 +13,6 @@
   },
   "default_locale": "en-US",
   "icons": {
-    "120": "/tests/email.jpg"
+    "120": "/qr-gaia/tests/email.jpg"
   }
 }
