@@ -50,6 +50,7 @@ var QRReader = {
   confirmActivity: function qrreader_confirmActivity(activity) {
     var dialog = document.getElementById('confirm-url');
     var url_placeholder = document.getElementById('url-placeholder');
+    url_placeholder.innerHTML = "";
     url_placeholder.appendChild(document.createTextNode(activity.data.url));
     dialog.hidden = false;
     dialog.onsubmit = function yup() {
@@ -66,6 +67,7 @@ var QRReader = {
   confirmUnknownData: function qrreader_confirmUnknownData(data) {
     var dialog = document.getElementById('unknown-data');
     var data_placeholder = document.getElementById('data-placeholder');
+    data_placeholder.innerHTML = "";
     data_placeholder.appendChild(document.createTextNode(data));
     dialog.hidden = false;
     dialog.onsubmit = function yup() {
